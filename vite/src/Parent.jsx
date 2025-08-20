@@ -1,17 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React from 'react';
 
 const Parent = () => {
-  let [count, setCount] = useState(0);
-
-  useEffect(() => {
-    document.title = `Count: ${count}`;
-    // fetch('https://jsonplaceholder.typicode.com/posts')
-    //   .then(response => response.json())
-    //   .then(data => console.log(data))
-    //   .catch(error => console.error('Error fetching data:', error));
-  }, [count]);
-
-  return <div></div>;
+  return (
+    <div>
+      <button className="text-blue-900 bg-blue-500 px-7 py-7 rounded-2xl mb-5">Click Me!</button>
+          <h1 className="text-4xl font-bold bg-amber-400 mb-5">Hello world!</h1>
+      <p className="text-lg bg-emerald-600 text-gray-700 mb-5">Hiiiiiiiiiiiiiiiiii</p>
+    </div>  
+  );
 };
 
 export default Parent;
